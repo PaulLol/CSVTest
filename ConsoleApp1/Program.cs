@@ -27,6 +27,10 @@ namespace ConsoleApp1
 
         public static void CSVFile()
         {
+            // Test exist test.csv
+
+            if (File.Exists("test.csv")) File.Delete("test.csv");
+
             // ReadCSVFile
 
             var lines = File.ReadAllLines("acme_worksheet.csv");
